@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Fri Aug 20 21:41:36 2021 as: nmap -p22,25,80 -sV -sC -T4 -Pn -oA 10.10.210.123 10.10.210.123
-Host: 10.10.210.123 (uranium.thm)	Status: Up
-Host: 10.10.210.123 (uranium.thm)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 25/open/tcp//smtp//Postfix smtpd/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/
-# Nmap done at Fri Aug 20 21:41:49 2021 -- 1 IP address (1 host up) scanned in 13.07 seconds

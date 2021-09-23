@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Sep 22 22:18:32 2021 as: nmap -p80,4012,4019,5901,6001 -sV -sC -T4 -Pn -oA 10.10.193.77 10.10.193.77 -->
+<nmaprun scanner="nmap" args="nmap -p80,4012,4019,5901,6001 -sV -sC -T4 -Pn -oA 10.10.193.77 10.10.193.77" start="1632363512" startstr="Wed Sep 22 22:18:32 2021" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="80,4012,4019,5901,6001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1632363512" endtime="1632363526"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.193.77" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-title" output="Home :: Super-Spam"><elem key="title">Home :: Super-Spam</elem>
+</script><script id="http-generator" output="concrete5 - 8.5.2"/><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="4012"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 86:60:04:c0:a5:36:46:67:f5:c7:24:0f:df:d0:03:14 (RSA)&#xa;  256 ce:d2:f6:ab:69:7f:aa:31:f5:49:70:e5:8f:62:b0:b7 (ECDSA)&#xa;  256 73:a0:a1:97:c4:33:fb:f4:4a:5c:77:f6:ac:95:76:ac (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">866004c0a5364667f5c7240fdfd00314</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCjPfdefRhbpiW/oi5uUVtVRW/pYZcnADODOU4e80iSnuqWfRB5DAXTpzKZNw5JBQGy+4Amwz0DyX/TlYBgXRxPXwFimpBXnc02jpMknSaDzdRnInU8wFcsBQc+GraYz1mMHvRcco2FfIrKurDbyEsBCzwJuk/RKdSq2rcFLhq8QAPoxc9FQcNeUIZrBt53/7+fD7B7NvjjU22+hXZhjt6PLC3LDWcaMvpYCxMYGwKoC9xTs+FtzEFrt6yWzKrXV1iNuKdNyt8vu22bcPl2GrQ9ai9I89DEY4wB3dADP6AfNikbi0QWjdNbW2fhblG9PvKRu9s3IbpVueX2qBfInuAF</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">ced2f6ab697faa31f54970e58f62b0b7</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIs/ZpOvCaKtCEwW4YraPciYLZnrRXDR6voHu0PipWaQpcdnsc8Vg1WMpkX0xgjXc9eD3NuZmBtTcIDTJXi7v4U=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">73a0a197c433fbf44a5c77f6ac9576ac</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHHX1bbkvh6bRHE0hWipYWoYyh+Q+uy3E0yCBOoyY888</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="4019"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x    2 ftp      ftp          4096 Feb 20  2021 IDS_logs&#xa;-rw-r-&#45;r-&#45;    1 ftp      ftp           526 Feb 20  2021 note.txt"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:10.6.66.15&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:10.6.66.15&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="5901"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="vnc" product="VNC" extrainfo="protocol 3.8" method="probed" conf="10"/><script id="vnc-info" output="&#xa;  Protocol version: 3.8&#xa;  Security types: &#xa;    VNC Authentication (2)&#xa;    Tight (16)&#xa;  Tight auth subtypes: &#xa;    STDV VNCAUTH_ (2)"><elem key="Protocol version">3.8</elem>
+<table key="Security types">
+<table>
+<elem key="name">VNC Authentication</elem>
+<elem key="type">2</elem>
+</table>
+<table>
+<elem key="name">Tight</elem>
+<elem key="type">16</elem>
+</table>
+</table>
+<table key="Tight auth subtypes">
+<table>
+<elem key="signature">VNCAUTH_</elem>
+<elem key="code">2</elem>
+<elem key="vendor">STDV</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="6001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="X11" extrainfo="access denied" method="probed" conf="10"/></port>
+</ports>
+<times srtt="94981" rttvar="30578" to="217293"/>
+</host>
+<runstats><finished time="1632363526" timestr="Wed Sep 22 22:18:46 2021" summary="Nmap done at Wed Sep 22 22:18:46 2021; 1 IP address (1 host up) scanned in 14.14 seconds" elapsed="14.14" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

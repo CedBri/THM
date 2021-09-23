@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Fri Sep 17 12:33:16 2021 as: nmap -p22,5581,5752,7331 -sV -sC -T4 -Pn -oA 10.10.66.154 10.10.66.154
-Host: 10.10.66.154 (fortress)	Status: Up
-Host: 10.10.66.154 (fortress)	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)/, 5581/open/tcp//ftp//vsftpd 3.0.3/, 5752/open/tcp//unknown///, 7331/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/
-# Nmap done at Fri Sep 17 12:36:00 2021 -- 1 IP address (1 host up) scanned in 163.94 seconds

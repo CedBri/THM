@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Sep 22 22:18:32 2021 as: nmap -p80,4012,4019,5901,6001 -sV -sC -T4 -Pn -oA 10.10.193.77 10.10.193.77
+Host: 10.10.193.77 ()	Status: Up
+Host: 10.10.193.77 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 4012/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 4019/open/tcp//ftp//vsftpd 3.0.3/, 5901/open/tcp//vnc//VNC (protocol 3.8)/, 6001/open/tcp//X11//(access denied)/
+# Nmap done at Wed Sep 22 22:18:46 2021 -- 1 IP address (1 host up) scanned in 14.14 seconds

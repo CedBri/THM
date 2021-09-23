@@ -1,4 +1,0 @@
-# Nmap 7.91 scan initiated Wed Jul  7 22:15:48 2021 as: nmap -p22 -sV -sC -T4 -Pn -oA 10.10.254.229 10.10.254.229
-Host: 10.10.254.229 ()	Status: Up
-Host: 10.10.254.229 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/
-# Nmap done at Wed Jul  7 22:15:55 2021 -- 1 IP address (1 host up) scanned in 7.55 seconds

@@ -1,1 +1,0 @@
-/opt/enum/privilege-escalation-awesome-scripts-suite/linPEAS/linpeas.sh
