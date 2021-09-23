@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu Sep 23 15:53:52 2021 as: nmap -p22,80,139,445,873 -sV -sC -T4 -Pn -oA 10.10.121.253 10.10.121.253
+Host: 10.10.121.253 ()	Status: Up
+Host: 10.10.121.253 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/, 873/open/tcp//rsync//(protocol version 31)/
+# Nmap done at Thu Sep 23 15:54:08 2021 -- 1 IP address (1 host up) scanned in 16.59 seconds
