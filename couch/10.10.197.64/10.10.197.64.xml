@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Fri Jul  9 11:47:05 2021 as: nmap -p22,5984 -sV -sC -T4 -Pn -oA 10.10.197.64 10.10.197.64 -->
+<nmaprun scanner="nmap" args="nmap -p22,5984 -sV -sC -T4 -Pn -oA 10.10.197.64 10.10.197.64" start="1625845625" startstr="Fri Jul  9 11:47:05 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,5984"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1625845625" endtime="1625845641"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.197.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 34:9d:39:09:34:30:4b:3d:a7:1e:df:eb:a3:b0:e5:aa (RSA)&#xa;  256 a4:2e:ef:3a:84:5d:21:1b:b9:d4:26:13:a5:2d:df:19 (ECDSA)&#xa;  256 e1:6d:4d:fd:c8:00:8e:86:c2:13:2d:c7:ad:85:13:9c (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDMXnGZUnLWqLZb8VQiVH0z85lV+G4KY5l5kKf1fS7YgSnfZ+k3CRjAZPuGceg5RQEUbOMCm+0u4SDyIEbwwAXGv0ORK4/VEIyJlZmtlqeyASwR8ML4yjdGqinqOUZ3jN/ZIg4veJ02nr86GZP+Nto0TZt7beaIxykMEZHTdo0CctdKLIet7PpvwG4F5Tn9MBoys9pUjfpcnwbf91Tv6i56Gipo07jKgb5vP8Nl1TXPjWB93WNW2vWEQ1J4tiyZlBeLOaNaEbxvNQFnKxjVYiiLCbcofwSdrwZ7/+sIy5BdiNW+k81rBN3OqaQNZ8urFaiXXf/ukRr/hhjY5a6m0MHn</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">349d390934304b3da71edfeba3b0e5aa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNTR07g3p8MfnQVnv8uqj8GGDH6VoSRzwRFflMbEf3WspsYyVipg6vtNQMaq5uNGUXF8ubpsnHeJA+T3RilTLXc=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">a42eef3a845d211bb9d42613a52ddf19</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIKLUyz2Tpwc5qPuFxV+HnGBeqLC6NWrmpmGmE0hk7Hlj</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">e16d4dfdc8008e86c2132dc7ad85139c</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="5984"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="CouchDB httpd" version="1.6.1" extrainfo="Erlang OTP/18" method="probed" conf="10"/><script id="http-server-header" output="CouchDB/1.6.1 (Erlang OTP/18)"><elem>CouchDB/1.6.1 (Erlang OTP/18)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script></port>
+</ports>
+<times srtt="99317" rttvar="74498" to="397309"/>
+</host>
+<runstats><finished time="1625845641" timestr="Fri Jul  9 11:47:21 2021" summary="Nmap done at Fri Jul  9 11:47:21 2021; 1 IP address (1 host up) scanned in 16.12 seconds" elapsed="16.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

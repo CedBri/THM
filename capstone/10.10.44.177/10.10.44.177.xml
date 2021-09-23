@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Sep 22 20:43:31 2021 as: nmap -p22,80 -sV -sC -T4 -Pn -oA 10.10.44.177 10.10.44.177 -->
+<nmaprun scanner="nmap" args="nmap -p22,80 -sV -sC -T4 -Pn -oA 10.10.44.177 10.10.44.177" start="1632357811" startstr="Wed Sep 22 20:43:31 2021" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1632357812" endtime="1632357822"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.44.177" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ca:05:e5:35:c3:36:29:31:a1:94:bd:49:e4:2a:54:97 (RSA)&#xa;  256 fb:95:0e:8b:52:91:91:1d:99:00:00:d5:21:c4:fa:aa (ECDSA)&#xa;  256 6e:cf:5a:f1:cb:69:e2:b6:10:d2:d3:40:13:94:a0:34 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDIL6v6exWqj9P38mRWRp6pYiiWCLsDWI7JKBRvKnC3eEIg8R/ke3jlPZwYJfu4nF869PVWJZ/vZjvWcWZfKlgsmIzHtErIFmbIRll4kchrMwl6CBBZXFK9Vs8jky6+zSWqO7ENoE5flNmlaOF2+hQQWQLNajpnbTilkYjgeWnwv0EVBYKYyHpfvJXUHDJUZ1GnBiu71AdWzpVHliFMNAm2lJVMLTCjfRTLOltD+RAaCxMFgIGyIvdfO+I6F+6TK+G+EGN9fLyxcC5TQYnCKY3Z6UdqlYCZTyGldlnVcvcr9LVBQrOnfuRDVqffdMT7ur30UKUNG/63deL3D0tUJE8uxAliQWBvDW/U06XSHCHBNzUvaqg4BLXBH4sw5kCM+YuL7Ap44qeffiWGHniyRBl+xDCyfIAPTBLlJR9VWYxQH8Nw/8AYtu5SA9udJ7tJL7LuflzYtwkUFic6UJVeNge+MDbhTlG8eDCORFsHKVvx0adK4R4cILp3Mr2FqC2u/eU=</elem>
+<elem key="fingerprint">ca05e535c3362931a194bd49e42a5497</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFQr3lNL5qZbInv5WLXyNVeh3h/s58V+QieDjAH5p9OJdkjbKO70aCurLm6/oOyhKM3grnSOGeiUmEeFIElYVbY=</elem>
+<elem key="fingerprint">fb950e8b5291911d990000d521c4faaa</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPQV7z8ugp7PFrNZoL4IQG4Z7CMPoWt/Zhj0C/YaTryi</elem>
+<elem key="fingerprint">6ecf5af1cb69e2b610d2d3401394a034</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/fuel/"/><script id="http-title" output="Welcome to FUEL CMS"><elem key="title">Welcome to FUEL CMS</elem>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="95112" rttvar="71339" to="380468"/>
+</host>
+<runstats><finished time="1632357822" timestr="Wed Sep 22 20:43:42 2021" summary="Nmap done at Wed Sep 22 20:43:42 2021; 1 IP address (1 host up) scanned in 10.36 seconds" elapsed="10.36" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

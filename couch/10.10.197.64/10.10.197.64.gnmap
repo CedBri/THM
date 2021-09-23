@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Fri Jul  9 11:47:05 2021 as: nmap -p22,5984 -sV -sC -T4 -Pn -oA 10.10.197.64 10.10.197.64
+Host: 10.10.197.64 ()	Status: Up
+Host: 10.10.197.64 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)/, 5984/open/tcp//http//CouchDB httpd 1.6.1 (Erlang OTP|18)/
+# Nmap done at Fri Jul  9 11:47:21 2021 -- 1 IP address (1 host up) scanned in 16.12 seconds

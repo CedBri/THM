@@ -1,0 +1,18 @@
+# Nmap 7.91 scan initiated Sat Apr 17 18:11:58 2021 as: nmap -vv --reason -Pn -sV -p 21 "--script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/lerusse/Documents/tryhackme/allsignspoint2pwnage/results/10.10.24.38/scans/tcp_21_ftp_nmap.txt -oX /home/lerusse/Documents/tryhackme/allsignspoint2pwnage/results/10.10.24.38/scans/xml/tcp_21_ftp_nmap.xml 10.10.24.38
+Nmap scan report for 10.10.24.38
+Host is up, received user-set (0.10s latency).
+Scanned at 2021-04-17 18:11:58 EDT for 2s
+
+PORT   STATE SERVICE REASON          VERSION
+21/tcp open  ftp     syn-ack ttl 125 Microsoft ftpd
+|_banner: 220 Microsoft FTP Service
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_11-14-20  04:26PM                  173 notice.txt
+| ftp-syst: 
+|_  SYST: Windows_NT
+|_sslv2-drown: 
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 17 18:12:00 2021 -- 1 IP address (1 host up) scanned in 2.67 seconds

@@ -1,0 +1,68 @@
+# Nmap 7.91 scan initiated Sat Apr 17 18:09:06 2021 as: nmap -vv --reason -Pn -sV -sC --version-all -oN /home/lerusse/Documents/tryhackme/allsignspoint2pwnage/results/10.10.24.38/scans/_quick_tcp_nmap.txt -oX /home/lerusse/Documents/tryhackme/allsignspoint2pwnage/results/10.10.24.38/scans/xml/_quick_tcp_nmap.xml 10.10.24.38
+Nmap scan report for 10.10.24.38
+Host is up, received user-set (0.12s latency).
+Scanned at 2021-04-17 18:09:07 EDT for 171s
+Not shown: 996 closed ports
+Reason: 996 resets
+PORT     STATE SERVICE            REASON          VERSION
+21/tcp   open  ftp                syn-ack ttl 125 Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_11-14-20  04:26PM                  173 notice.txt
+| ftp-syst: 
+|_  SYST: Windows_NT
+135/tcp  open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+139/tcp  open  netbios-ssn        syn-ack ttl 125 Microsoft Windows netbios-ssn
+3389/tcp open  ssl/ms-wbt-server? syn-ack ttl 125
+| rdp-ntlm-info: 
+|   Target_Name: DESKTOP-997GG7D
+|   NetBIOS_Domain_Name: DESKTOP-997GG7D
+|   NetBIOS_Computer_Name: DESKTOP-997GG7D
+|   DNS_Domain_Name: DESKTOP-997GG7D
+|   DNS_Computer_Name: DESKTOP-997GG7D
+|   Product_Version: 10.0.18362
+|_  System_Time: 2021-04-17T22:11:49+00:00
+| ssl-cert: Subject: commonName=DESKTOP-997GG7D
+| Issuer: commonName=DESKTOP-997GG7D
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-01-31T18:46:06
+| Not valid after:  2021-08-02T18:46:06
+| MD5:   d1e4 d8ce c27e f320 bce5 7c68 419b 9643
+| SHA-1: 0deb 19c3 f73b 8076 c441 be8c 70c6 573c e264 03a6
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQPfZxdAS+HKNL+id10EeMKTANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9ERVNLVE9QLTk5N0dHN0QwHhcNMjEwMTMxMTg0NjA2WhcNMjEw
+| ODAyMTg0NjA2WjAaMRgwFgYDVQQDEw9ERVNLVE9QLTk5N0dHN0QwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCkdIFrbwCkV+QStYp75HfvS9j38xvFtmvO
+| xGkaCWjA+oNW0itBR/t+CP+BLbAPW6qqt17pCs9I49ovz0PgGZ/j0FP8IJs4mi9g
+| aWDerGM6cNgwagk28VpVutTYkvhHlJjPeT9CMxLLTCR5gERyuxB0LeqpV8XoBlgB
+| zY/IrMnO7eaiYJNnp1cZFHtNEVNJK0Z5w4HaHSfhU7k9r3MNE6ldkjuMNrgElZya
+| a1VgcKSB7GK5J9cyG3R+dxwBrvgaW/sjau2MmB5gNm1jye+ntk1/h5sWXYAb6rf2
+| T+OFdPTD+A6m1azV1lQO5qNCiRq826PBfK4MoZii9m3hebxp7JchAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAOR8rz9/N2K2z2O+Ll+ImMgmNoBbg577vjdur7sqKnLtf120LTc6VBFgx
+| eBbNQi5vQsRz/Oykfoz9QQEdiZCIunn+10/o0715Mn80l2eQntRHHvwLDHNi4txM
+| J5A7MUreuJccp4UmkrW2IRY9wmg2CZfCIMbpoyg/L3yoBblydZH/VGwU6FFd1dE2
+| KzuZ8F7EJ2yAg+Z6D9CawHgKLQLOeVHz0MbMQ7mwPQ3NMsKG3MpyLuGDrE30PBSD
+| Ss8Cs4rclhW9RLUVcif4sYhC75gm0vXlCqHzoFrXeUg8AHas8FpQsGtz75urOqn+
+| 3xHEbjlSAlD0kpQ4eGxd83YU9SbnQA==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-04-17T22:11:57+00:00; 0s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 55284/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 46836/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 49190/udp): CLEAN (Timeout)
+|   Check 4 (port 21997/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-security-mode: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_smb2-time: ERROR: Script execution failed (use -d to debug)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 17 18:11:58 2021 -- 1 IP address (1 host up) scanned in 171.09 seconds

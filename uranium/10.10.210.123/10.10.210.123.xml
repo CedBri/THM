@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Aug 20 21:41:36 2021 as: nmap -p22,25,80 -sV -sC -T4 -Pn -oA 10.10.210.123 10.10.210.123 -->
+<nmaprun scanner="nmap" args="nmap -p22,25,80 -sV -sC -T4 -Pn -oA 10.10.210.123 10.10.210.123" start="1629510096" startstr="Fri Aug 20 21:41:36 2021" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,25,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629510097" endtime="1629510109"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.210.123" addrtype="ipv4"/>
+<hostnames>
+<hostname name="uranium.thm" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a1:3c:d7:e9:d0:85:40:33:d5:07:16:32:08:63:31:05 (RSA)&#xa;  256 24:81:0c:3a:91:55:a0:65:9e:36:58:71:51:13:6c:34 (ECDSA)&#xa;  256 c2:94:2b:0d:8e:a9:53:f6:ef:34:db:f1:43:6c:c1:7e (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDMwJfFdIx+ajk4m+SaA9FCONx/arQgXZx22oViZpzp6QSuMYI3u4GXubPf+P/1AKjrdTZ2UtLt3HszSNuf3V/RMQgvXYrPGFmClvfnZZ88an/oz38l4aGTnZ1LJ8upLU90METx4YXcA9uM3u0dECXfUMqFHX+wwFxP/WKUJ7lX3Ae7H+Uj2Bwrw76d8Ndwf3a/EDZ6gTzYTgrgprZQeBbriJM9yrjljakLNCajdDzjtDSQs+wXwme2MXx8u7aAZ4ofL7cuGxCPil2R92HWrKomMQ7Iyd9SMre3rCLhSOhbYnJGTwl3P6fEqCPqp2shMO2AYVrgz0jC6ou8iM3jGe4t</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">a13cd7e9d0854033d507163208633105</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBZPRLpPW1xp0xWpgkGvpFwR6tKPTMRvjkAbiwoPC/qCKUYg2p06XDFCMHNDmuqIC5SHvnqZqM0EdwJIuUkFvIE=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">24810c3a9155a0659e36587151136c34</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFY55KAy8LZ+FNH0gc/IzoPlL/gQDwtvUMTzmQTd8MAj</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">c2942b0d8ea953f6ef34dbf1436cc17e</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" uranium" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="uranium, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=uranium&#xa;Subject Alternative Name: DNS:uranium&#xa;Not valid before: 2021-04-09T21:40:53&#xa;Not valid after:  2031-04-07T21:40:53"><table key="subject">
+<elem key="commonName">uranium</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">uranium</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A9C420E16682365954647A87971C10356372E703458D8C09C7D47C9E630CE129E55E9268A99B76F3BC7D1EDD9F43F73C9FD669E16275788B8C80F08F89A7F0B1D4673D557BC3D9C016E1ACC77426418D1E9AAC6085D78831B5DAE088149D2A832A528D93F6D95FA9F9EB18E4DC73BD0A617049EAD8C81CFAC599E5D152F9595A1B05D22D51CD6A962CD0775B2ECEDB260FD9257C30B8E81068B665EA9231B62484C2936D2ED548B34848EF5AC765B16F98F99442D78CBA31EBF9CFB9E2642D1DFB61B8C3CED759DCBA73F055D4AB29B3F8E599AB630B61F75ED999FB700EF31607827CE24C1E118DF410B4E3A1015BAD1154585669CCD31EC4402E75AF43955F</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:uranium</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-04-09T21:40:53</elem>
+<elem key="notAfter">2031-04-07T21:40:53</elem>
+</table>
+<elem key="md5">293dbef32fee6092c0d72a67ea27367c</elem>
+<elem key="sha1">0a0c26e0ae3c723e538d3c216b40c84cf9e78fdb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0zCCAbugAwIBAgIUIVXdlC2OCz8mRhqtv01MouzQ0ZswDQYJKoZIhvcNAQEL&#xa;BQAwEjEQMA4GA1UEAwwHdXJhbml1bTAeFw0yMTA0MDkyMTQwNTNaFw0zMTA0MDcy&#xa;MTQwNTNaMBIxEDAOBgNVBAMMB3VyYW5pdW0wggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQCpxCDhZoI2WVRkeoeXHBA1Y3LnA0WNjAnH1HyeYwzhKeVekmip&#xa;m3bzvH0e3Z9D9zyf1mnhYnV4i4yA8I+Jp/Cx1Gc9VXvD2cAW4azHdCZBjR6arGCF&#xa;14gxtdrgiBSdKoMqUo2T9tlfqfnrGOTcc70KYXBJ6tjIHPrFmeXRUvlZWhsF0i1R&#xa;zWqWLNB3Wy7O2yYP2SV8MLjoEGi2ZeqSMbYkhMKTbS7VSLNISO9ax2Wxb5j5lELX&#xa;jLox6/nPueJkLR37YbjDztdZ3Lpz8FXUqymz+OWZq2MLYfde2Zn7cA7zFgeCfOJM&#xa;HhGN9BC046EBW60RVFhWaczTHsRALnWvQ5VfAgMBAAGjITAfMAkGA1UdEwQCMAAw&#xa;EgYDVR0RBAswCYIHdXJhbml1bTANBgkqhkiG9w0BAQsFAAOCAQEAj1F/S1v2EFAL&#xa;H1FG/SWNlqsD9KKwUDSceiHicEz8IE9YU+Vg1NRxluYYpkDbfyrCVBPW//JZJNd2&#xa;jpCObLaQRxZ/4QCa+t4/7Nlue8IiWzax8nEVMUV8clFGlBmktfsx7d/iyjDeGq2H&#xa;VE3p6nFpZFmGmCvYfue9IcZWduFbOIWzf2XvnGnaHxYvccBry7tFGW5F93i3asV3&#xa;UQqT8xZ+eaxzijdoEl9klp/Ee4R2b8bjHMDt7SFzvQAGzL3j1mFPY9qA78K9eNv3&#xa;vHgqdChT9jryHVBEcLiTTPsfNRcARQeOr4O0wGdlQX6E3FRbPn3JpM96Do8+/kJd&#xa;r/RWkJhbQQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Uranium Coin"><elem key="title">Uranium Coin</elem>
+</script></port>
+</ports>
+<times srtt="97978" rttvar="55149" to="318574"/>
+</host>
+<runstats><finished time="1629510109" timestr="Fri Aug 20 21:41:49 2021" summary="Nmap done at Fri Aug 20 21:41:49 2021; 1 IP address (1 host up) scanned in 13.07 seconds" elapsed="13.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
