@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Thu Oct  7 22:06:49 2021 as: nmap -sV -sC -v -oN init_nmap.log -p- -T4 10.10.144.77/24

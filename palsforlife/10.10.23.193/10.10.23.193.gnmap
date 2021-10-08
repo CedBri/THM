@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Oct  1 14:08:06 2021 as: nmap -p22,6443,10250,30180,31111,31112 -sV -sC -T4 -Pn -oA 10.10.23.193 10.10.23.193
+Host: 10.10.23.193 ()	Status: Up
+Host: 10.10.23.193 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 6443/open/tcp//ssl|sun-sr-https?///, 10250/open/tcp//ssl|http//Golang net|http server (Go-IPFS json-rpc or InfluxDB API)/, 30180/open/tcp//http//nginx 1.21.0/, 31111/open/tcp//unknown///, 31112/open/tcp//ssh//OpenSSH 7.5 (protocol 2.0)/
+# Nmap done at Fri Oct  1 14:09:54 2021 -- 1 IP address (1 host up) scanned in 108.26 seconds
