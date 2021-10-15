@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Oct 15 10:14:23 2021 as: nmap -p22,139,80,445,8080,10021 -sV -sC -T4 -Pn -oA 10.10.146.143 10.10.146.143 -->
+<nmaprun scanner="nmap" args="nmap -p22,139,80,445,8080,10021 -sV -sC -T4 -Pn -oA 10.10.146.143 10.10.146.143" start="1634307263" startstr="Fri Oct 15 10:14:23 2021" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22,80,139,445,8080,10021"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1634307263" endtime="1634307279"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.146.143" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port22-TCP:V=7.92%I=7%D=10/15%Time=61698CC5%P=x86_64-pc-linux-gnu%r(NULL,29,&quot;SSH-2\.0-OpenSSH_8\.2p1\x20THM{946219583339}\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-OpenSSH_8.2p1 THM{946219583339}"><elem key="NULL">&#xa;    SSH-2.0-OpenSSH_8.2p1 THM{946219583339}</elem>
+</script><script id="ssh-hostkey" output="&#xa;  3072 da:5f:69:e2:11:1f:7c:66:80:89:61:54:e8:7b:16:f3 (RSA)&#xa;  256 3f:8c:09:46:ab:1c:df:d7:35:83:cf:6d:6e:17:7e:1c (ECDSA)&#xa;  256 ed:a9:3a:aa:4c:6b:16:e6:0d:43:75:46:fb:33:b2:29 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDI/lsJvB7tVnxblzcauj2/zvS2sREr9M28uEKQoWcfewzEn0gKyB8NJ5IRm+VxmgOAQpebzqZjZ+Wx9Ahd+gFRjpCvKCpLvxT58YK2thQrzyeT8HY03f7lhNBgUdLm/3gNcqV4cGO6PcxoWvxYIbbM98oiiAiWKBfzHocWAEh85bvY0E7ftelUp4P8DG2f0jERy2VMwEWzSzbB0DUSaasH57RJsNYQBE5jBdCwDbasaI5P04WHDCPk2wu9sc0MukhyDidK1/kWCdLHycfKGOWYC2XyCunGfiD1ynljDrRaqgagdjvfjHka81Ol17J00ILKyfM88yYqEeUCFAnQncTDPwIC7QTAPqKsw9fGWGdEYmo6Jur+v406kk/6xTQ2eOj+S1hD9ahzWFIy2MwrrwmFn3Hcb7/xfCw5rZJIVZWaoSWQYO71kGgoWAJZzKHziv0NUkgofTFpQGWthveIIMx1PNPdaIUH5M0/gbk5XscdbYjFuOFP5canSOQuxG8Prt8=</elem>
+<elem key="fingerprint">da5f69e2111f7c6680896154e87b16f3</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBP1eIIFNNbSO2weyRY0pHKChu4RtCBTyhTjMOCSW/lRlmcZv1Glitrms3x2WQQ4CWjHw2XalVZvRursXCcUEOnQ=</elem>
+<elem key="fingerprint">3f8c0946ab1cdfd73583cf6d6e177e1c</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIA+Y0H+tldbG0k08Zkd3Lx1oBTlLh2KXyzS0lInfZmRp</elem>
+<elem key="fingerprint">eda93aaa4c6b16e60d437546fb33b229</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd</cpe></service><script id="http-server-header" output="lighttpd THM{web_server_25352}"><elem>lighttpd THM{web_server_25352}</elem>
+</script><script id="http-title" output="Hello, world!"><elem key="title">Hello, world!</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba:4.6.2</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba:4.6.2</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Node.js" extrainfo="Express middleware" method="probed" conf="10"><cpe>cpe:/a:nodejs:node.js</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8)."></script></port>
+<port protocol="tcp" portid="10021"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="2s"><elem key="median">2</elem>
+<elem key="count">1</elem>
+<elem key="stddev">0</elem>
+<elem key="mean">2</elem>
+</script><script id="nbstat" output="NetBIOS name: NETSEC-CHALLENG, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/><script id="smb2-time" output="&#xa;  date: 2021-10-15T14:14:38&#xa;  start_date: N/A"><elem key="date">2021-10-15T14:14:38</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><times srtt="98201" rttvar="23938" to="193953"/>
+</host>
+<runstats><finished time="1634307279" timestr="Fri Oct 15 10:14:39 2021" summary="Nmap done at Fri Oct 15 10:14:39 2021; 1 IP address (1 host up) scanned in 16.29 seconds" elapsed="16.29" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

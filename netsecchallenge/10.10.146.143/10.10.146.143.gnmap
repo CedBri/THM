@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Oct 15 10:14:23 2021 as: nmap -p22,139,80,445,8080,10021 -sV -sC -T4 -Pn -oA 10.10.146.143 10.10.146.143
+Host: 10.10.146.143 ()	Status: Up
+Host: 10.10.146.143 ()	Ports: 22/open/tcp//ssh//(protocol 2.0)/, 80/open/tcp//http//lighttpd/, 139/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 445/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 8080/open/tcp//http//Node.js (Express middleware)/, 10021/open/tcp//ftp//vsftpd 3.0.3/
+# Nmap done at Fri Oct 15 10:14:39 2021 -- 1 IP address (1 host up) scanned in 16.29 seconds

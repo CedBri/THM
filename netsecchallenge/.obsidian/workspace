@@ -1,0 +1,91 @@
+{
+  "main": {
+    "id": "4b70603fb1a3ae4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9e81f97cd100edb",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db19126d0eb094ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "444cf5a2e8d88673",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c31d44ba66ef33d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "137074a6911d02ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9da733ecedd7ecc",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b8a2e6340f3c51b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "539a8b7555a2c607",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a9e81f97cd100edb",
+  "lastOpenFiles": [
+    "README.md",
+    "nmap.md",
+    "Untitled.md"
+  ]
+}
