@@ -90,5 +90,6 @@ jabberwock:KnocksBushesCrumpledExperiment
 ---
 
 > Get the user flag.
-
+thm{65d3710e9d75d5f346d2bac669119a23}
 > Get the root flag.
+thm{bc2337b6f97d057b01da718ced6ead3f}
